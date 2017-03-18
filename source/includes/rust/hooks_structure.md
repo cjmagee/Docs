@@ -33,8 +33,8 @@ void CanUseLock(BasePlayer player, CodeLock @lock)
 }
 ```
 
- * Called when the player tries to use a door with a code lock
- * Returning true allows door usage, nothing will by default will allow door usage, returning anything else will reject door usage
+ * Called when the player tries to access an entity secured with a code lock or learn a code lock
+ * Returning true or nothing will allow access to the secured entity, returning anything else will reject access
 
 ## CanUseLock
 

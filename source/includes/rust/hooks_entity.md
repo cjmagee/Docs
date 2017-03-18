@@ -1,11 +1,11 @@
 # Entity Hooks
 
-## CanAssignBedToUser
+## CanAssignBed
 
 ``` csharp
-void CanAssignBedToUser(BaseEntity bed, BasePlayer assigner, ulong assigneeId)
+void CanAssignBed(BasePlayer player, BaseEntity bed, ulong targetPlayerId)
 {
-    Puts("CanAssignBedToUser works!");
+    Puts("CanAssignBed works!");
 }
 ```
 
@@ -24,18 +24,6 @@ void CanNetworkTo(BaseNetworkable entity, BasePlayer target)
  * Called when an entity attempts to network with a player
  * Returning true overrides default behavior
 
-## CanUnlockCodeLock
-
-``` csharp
-void CanUnlockCodeLock(CodeLock @lock, BasePlayer player)
-{
-    Puts("CanUnlockCodeLock works!");
-}
-```
-
- * Called when a player attempts to enter a code into a code lock
- * Returning true overrides default behavior
- 
 ## OnAirdrop
 
 ``` csharp
