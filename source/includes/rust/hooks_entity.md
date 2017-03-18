@@ -1,5 +1,17 @@
 # Entity Hooks
 
+## CanAssignBedToUser
+
+``` csharp
+void CanAssignBedToUser(BaseEntity bed, BasePlayer assigner, ulong assigneeId)
+{
+    Puts("CanAssignBedToUser works!");
+}
+```
+
+ * Called when a player attempts to give a sleeping bag or bed to another player
+ * Returning true overrides default behavior
+
 ## CanNetworkTo
 
 ``` csharp
